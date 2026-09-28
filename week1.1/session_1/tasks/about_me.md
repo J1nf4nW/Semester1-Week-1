@@ -1,3 +1,3 @@
-# About
+# **About Jinfan**
+Hello, I am Jinfan I am Chinese-British
 
-Using the resources linked in examples, have a go at making a quick about you page using Markdown.
