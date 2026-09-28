@@ -11,3 +11,7 @@
 
 # print out the answer
 
+num1 = float(input("enter a first random number:"))
+num2 = float(input("enter a second random number:"))
+sum = num1 + num2
+print(sum)
