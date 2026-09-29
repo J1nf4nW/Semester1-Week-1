@@ -17,8 +17,10 @@
 
 num1 = input("Enter a multiplicand:")
 num2 = input("Enter a multiplicator:")
-if num1.isdigit() == True and num2.isdigit() == True:
-    product = float(num1) * float(num2)
-    print(f"{num1}x{num2}={product}")
-else:
+try:
+    num1 = float(num1)
+    num2 = float(num2)
+    product = num1 * num2
+    print(f"The product of {num1} and {num2} is equal to {product}")
+except ValueError:
     print("This is not a number")
