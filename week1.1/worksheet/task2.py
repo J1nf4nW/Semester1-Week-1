@@ -12,7 +12,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 monthly_savings = input("Please enter the monthly amount you want to save in £X.XX:")
 try:
     monthly_savings = float(monthly_savings)
-    if monthly_savings > 0.00:
+    if monthly_savings >= 0.00:
         yearly_savings = monthly_savings * 12
         print(f"By the end of the year you will have saved £{yearly_savings:.2f}")
         total_savings = 1.08 * yearly_savings
