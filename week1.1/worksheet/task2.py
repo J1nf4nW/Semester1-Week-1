@@ -11,11 +11,14 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 # Validate that they have entered an integer.
 monthly_savings = input("Please enter the monthly amount you want to save in £X.XX:")
 try:
-    monthly_savings = float(monthly_savings) and monthly_savings >= 0.00
-    yearly_savings = monthly_savings * 12
-    print(f"By the end of the year you will have saved £{yearly_savings:.2f}")
-    total_savings = 1.08 * yearly_savings
-    print(f"With a 0.8% interest your total amount by the end of the year by saving £{monthly_savings:.2f} every month is £{total_savings:.2f}")
+    monthly_savings = float(monthly_savings)
+    if monthly_savings > 0.00:
+        yearly_savings = monthly_savings * 12
+        print(f"By the end of the year you will have saved £{yearly_savings:.2f}")
+        total_savings = 1.08 * yearly_savings
+        print(f"With a 0.8% interest your total amount by the end of the year by saving £{monthly_savings:.2f} every month is £{total_savings:.2f}")
+    else:
+        print("Invalid amount")
 except:
     print("Invalid amount")
 
