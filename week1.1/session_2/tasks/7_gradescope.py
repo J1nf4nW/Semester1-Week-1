@@ -23,4 +23,4 @@ try:
     product = num1 * num2
     print(f"The product of {num1} and {num2} is equal to {product}")
 except ValueError:
-    print("This is not a number")
+    print("That is not a number")
