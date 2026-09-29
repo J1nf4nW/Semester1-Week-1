@@ -11,4 +11,6 @@
 # 3: 27^2 x 19/4
 
 print((4*8)*6)
-print(2^3/(8/3))
+print(2**3/(8/3))
+answer = ((27**2)*(19/4))
+print(f"The answer is {answer:.1f}")

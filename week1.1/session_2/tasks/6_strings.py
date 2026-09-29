@@ -3,22 +3,22 @@
 
 user_string = input("Enter a string: ")
 
-print(f"\nOriginal String: {user_string}")
-print(f"Modified String 1: {user_string.lower()}")
-print(f"Modified String 2: {user_string.upper()}")
-print(f"Modified String 3: {user_string.strip()}")
-print(f"Modified String 4: {user_string.replace('a', '@')}")
-print(f"Modified String 5: {user_string.capitalize()}")
-print(f"Modified String 6: {user_string[::-1]}")
-print(f"Modified String 7: {user_string.title()}")
-print(f"Modified String 8: {len(user_string)}")
-print(f"Modified String 9: {user_string.find('a')}")
-print(f"Modified String 10: {user_string.count('a')}")
-print(f"Modified String 11: {user_string.startswith('Hello')}")
-print(f"Modified String 12: {user_string.endswith('!')}")
-print(f"Modified String 13: {user_string.isalnum()}")
-print(f"Modified String 14: {user_string.isalpha()}")
-print(f"Modified String 15: {user_string.isdigit()}")
+print(f"\nOriginal String: {user_string}") 
+print(f"Modified String 1: {user_string.lower()}") #all lowercase
+print(f"Modified String 2: {user_string.upper()}") #all uppercase
+print(f"Modified String 3: {user_string.strip()}") #removes any leading or trailing whitelines
+print(f"Modified String 4: {user_string.replace('a', '@')}") #replace a with @
+print(f"Modified String 5: {user_string.capitalize()}") #first character is uppercase, rest is lowercase
+print(f"Modified String 6: {user_string[::-1]}") #reverses the character order 
+print(f"Modified String 7: {user_string.title()}") #Capitalises the first character of every word 
+print(f"Modified String 8: {len(user_string)}") #number of characters in a string including spaces
+print(f"Modified String 9: {user_string.find('a')}") #position of letter a in a string excluding spaces
+print(f"Modified String 10: {user_string.count('a')}") #counts how many repetitions of "a" there are
+print(f"Modified String 11: {user_string.startswith('Hello')}") #checks if the sting starts with "Hello"
+print(f"Modified String 12: {user_string.endswith('!')}") #checks if the string ends with a !
+print(f"Modified String 13: {user_string.isalnum()}") #checks if the string is alphanumeric (a-z) or (0-9)
+print(f"Modified String 14: {user_string.isalpha()}") #checks if the string only contains letters
+print(f"Modified String 15: {user_string.isdigit()}") #checks if the string only contains numbers
 
 
 

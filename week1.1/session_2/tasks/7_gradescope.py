@@ -14,3 +14,11 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+
+num1 = input("Enter a multiplicand:")
+num2 = input("Enter a multiplicator:")
+if num1.isdigit() == True and num2.isdigit() == True:
+    product = float(num1) * float(num2)
+    print(f"{num1}x{num2}={product}")
+else:
+    print("This is not a number")
