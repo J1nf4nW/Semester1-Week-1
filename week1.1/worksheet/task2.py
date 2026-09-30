@@ -15,7 +15,7 @@ try:
     if monthly_savings >= 0.00:
         yearly_savings = monthly_savings * 12
         print(f"By the end of the year you will have saved £{yearly_savings:.2f}")
-        total_savings = 1.08 * yearly_savings
+        total_savings = 1.008 * yearly_savings
         print(f"With a 0.8% interest your total amount by the end of the year by saving £{monthly_savings:.2f} every month is £{total_savings:.2f}")
     else:
         print("Invalid amount")
