@@ -17,3 +17,4 @@ time_hours_input = input("How many hours will the journey take? ")
 
 try:
     
+    
