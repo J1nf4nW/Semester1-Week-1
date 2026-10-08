@@ -36,7 +36,6 @@ def maximum():
     maximum = max(numbers)
     print(f"Maximum = {maximum}")
 
-try:
     numbers = read_numbers()
     numbers.sort()
     if len(numbers) != 0:
@@ -46,5 +45,3 @@ try:
         median()
     else:
         sys.exit("Error: no numbers provided")
-except:
-    sys.exit("Please check your values are either float or integer values in the list")
