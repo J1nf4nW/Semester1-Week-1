@@ -3,7 +3,7 @@
 # Reads these values into a list, using code that we have provided
 # Finds the minimum, maximum, mean and median of these values
 # Prints each statistic on a separate line
-
+import sys
 def read_numbers():
     line = input("Enter some numbers, separated by spaces: ")
     numbers = [float(item) for item in line.split()]
@@ -13,7 +13,7 @@ def mean():
     n = len(numbers)
     total = sum(numbers)
     mean = total / n
-    print(f"The mean of the list is {mean}")
+    print(f"Mean is {mean}")
 
 def median():
     n = len(numbers)
@@ -26,23 +26,25 @@ def median():
     else:
         median = numbers[n // 2]
 
-    print(f"The median of the list is {median}")
+    print(f"Median is {median}")
 
 def minimum():
     minimum = min(numbers)
-    print(f"The minimum of the list is {minimum}")
+    print(f"Minimum is {minimum}")
 
 def maximum():
     maximum = max(numbers)
-    print(f"The maximum of the list is {maximum}")
+    print(f"Maximum is {maximum}")
 
 try:
     numbers = read_numbers()
     numbers.sort()
-    print(numbers)
-    minimum()
-    maximum()
-    mean()
-    median()
+    if len(numbers) != 0:
+        minimum()
+        maximum()
+        mean()
+        median()
+    else:
+        sys.exit("Error: no numbers provided")
 except:
-    print("Please check your values are either float or integer values in the list")
+    sys.exit("Please check your values are either float or integer values in the list")
