@@ -13,7 +13,7 @@ def mean():
     n = len(numbers)
     total = sum(numbers)
     mean = total / n
-    print(f"Mean is {mean}")
+    print(f"Mean = {mean}")
 
 def median():
     n = len(numbers)
@@ -26,15 +26,15 @@ def median():
     else:
         median = numbers[n // 2]
 
-    print(f"Median is {median}")
+    print(f"Median = {median}")
 
 def minimum():
     minimum = min(numbers)
-    print(f"Minimum is {minimum}")
+    print(f"Minimum = {minimum}")
 
 def maximum():
     maximum = max(numbers)
-    print(f"Maximum is {maximum}")
+    print(f"Maximum = {maximum}")
 
 try:
     numbers = read_numbers()
