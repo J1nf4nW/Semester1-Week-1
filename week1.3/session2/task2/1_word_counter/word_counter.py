@@ -2,6 +2,10 @@
 
 # We want to read in a text file, and calculate how many words are in it. 
 # You can use any of the .txt files to test this - or even make your own.
+for file in ["story.txt", "story2.txt", "glasses.txt"]:
+    with open(file, "r") as infile:
+        count = sum(len(line.split()) for line in infile)
+    print(f"{file} - {count}")
 
 # open and read the file
 
