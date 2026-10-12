@@ -8,5 +8,6 @@ while fruit:
 
 
 # Why does this work?
-
+#The list is not empty, outputing the last variable of the list that is being eliminated
 # What features of Python does it rely on?
+#The .pop() function

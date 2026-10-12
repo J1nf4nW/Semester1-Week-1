@@ -21,3 +21,4 @@ with open('file_data.txt', 'r') as file:
 # We use 'break' to exit the reading process at the end of the file.
 
 # Why do we use an infinite 'while True' loop for this process?
+#So that if it isn't the file_data.txt file the program would end, as it isn't the valid file

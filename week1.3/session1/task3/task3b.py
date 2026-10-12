@@ -3,7 +3,11 @@
 fruit = ['apple','pear','banana','orange']
 
 while fruit:
-	print(fruit.pop())
+	if fruit != [""]:
+		print(fruit.pop())
+	else:
+		print("There are no more variables in the list, fruit")
+		break
 
 
 # Add an else clause with a message that the list is now empty
