@@ -3,9 +3,11 @@
 # Your code for the overall grade classification
 
 # ask for filename of the student file
-
+filename = input("Type filename of the student file:")
 # open the file
-
+with open(filename, "r") as infile:
+    for line in infile:
+        print(line)
 # read in the data, and for each student calculate their average grade and classification
 
 
