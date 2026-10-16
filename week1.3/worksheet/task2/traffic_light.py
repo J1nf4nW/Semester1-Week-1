@@ -40,6 +40,7 @@ while systime < maxtime:
     else:
         print("Please enter a valid integer runtime for the program")
         break
-
+    
 # Simulate the traffic light system up to time=maxtime in 1-second steps
+
 # At the end of each step you should output the time and state using the statement on line 14
