@@ -10,4 +10,7 @@ def calculate_travel_distance(tank_capacity, km_per_litre):
     f_capacity = float(tank_capacity) 
     f_kml = float(km_per_litre) 
     distance = round(f_capacity * f_kml, 2) 
+    print(distance)
     return distance 
+
+calculate_travel_distance(1,3)
