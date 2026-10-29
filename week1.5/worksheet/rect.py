@@ -8,6 +8,8 @@ class Rectangle:
         """
         Creates a Rectangle, given values for width and height.
         """
+        if not isinstance(width, (int,float)):
+            raise TypeError("width must be an integer")
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
         self.width = width
