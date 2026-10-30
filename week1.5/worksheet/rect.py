@@ -38,12 +38,5 @@ class Rectangle:
            Returns the Rectangle's perimeter by using 2*(width * height).
            """
            return 2 * (self.width + self.height)
-
-r = Rectangle(5,0)
-print(r.is_square())
-print(r.area())
-print(r.perimeter())
-
-
     # Implement methods is_square(), area() & perimeter() here
     # (See README.md for details of what they should do)

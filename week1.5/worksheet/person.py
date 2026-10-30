@@ -30,10 +30,5 @@ class Person:
         for i in split_up:
             initials += i[0].upper()
         return initials
-
-n = Person("Jinfan Wang", date(2008,5,12))
-print(n.is_birthday())
-print(n.initials())
-
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
