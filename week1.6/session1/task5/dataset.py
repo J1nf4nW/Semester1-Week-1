@@ -10,8 +10,6 @@ class QuakeDatasetError(Exception):
     """
     An exception type for errors involving QuakeDataset.
     """
-
-
 class QuakeDataset:
     """
     An earthquake dataset obtained from a USGS data feed.
@@ -33,6 +31,10 @@ class QuakeDataset:
 
         The new data replaces any existing data.
         """
+        
+        
+        
+        
         # Write code here to replace existing data with new earthquake data.
         # Use the value returned by the feed's reader() method as the
         # subject of a for loop.
