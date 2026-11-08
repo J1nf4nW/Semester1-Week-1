@@ -1,0 +1,17 @@
+from pixel import Image
+
+
+img = Image()
+
+img.width = 1
+img.height = 4
+img.max_value = 255
+
+img.pixels = [
+    [[0,0,0,0]
+    [0,0,0,0]
+    [0,0,0,0]
+    [0,0,0,0]]
+]
+
+img._write_pgm("test.pgm")
